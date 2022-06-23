@@ -1,40 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Shrikhand?query=Shrikhand#standard-styles">
+        <script src="https://kit.fontawesome.com/52fa043bb6.js" crossorigin="anonymous"></script>
+
         <title>OhMyFood</title>
     </head>
 
     <body>
-        <header class="header">
-            <img class="header__logo" src="/images/logo/ohmyfood@2x.svg" alt="logo OhMyFood"/>
-        </header>
-
-        <div id="hautdepage">
-            <div class="marker">
-                <i class="fas fa-map-marker-alt searchBar__icon"></i>
-                <p>Paris, Belleville</p>
+        <header class="homepage">
+            <i class="fa-solid fa-arrow-left"></i>
+            <div class="logo">
+                <img src="/images/logo/ohmyfood@2x.svg" alt="logo OhMyFood"/>
             </div>
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button class="btn btn-homepage">Explorer nos restaurants</button>
-        </div>
+        </header>
 
         <main>
             <nav>
-                <h2>Fonctionnement</h2>
-                <ol>
-                    <li><a href="#"><i class="fa-solid fa-mobile-screen-button fa-lg" aria-hidden="true"></i>Choisissez un restaurant</a></li>
-                    <li><a href="#"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i>Composez votre menu</a></li>
-                    <li><a href="#"><i class="fa-solid fa-store fa-lg" aria-hidden="true"></i>Déguster au restaurant</a></li>
-                </ol>
-        </nav>
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="search titre-roboto-2">Paris, Belleville</div>    
+            </nav>
+            <article>
+                <section class="reserved">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins</h2>
+                    <div class="btn">
+                    <div>Explorer nos restaurants</div>
+                    </div>
+                </section>
+          
+                <section class="function">
+                    <h1>Fonctionnement</h1>
+                    <div class="all-buttons">
+                        <div class="btn__fonction">
+                            <i>logo téléphone</i>
+                            <p>Choisissez un restaurant</p>
+                        </div>
+                        <div class="btn__fonction">
+                            <i>logo menu</i>
+                            <p>Composez votre menu</p>
+                        </div>
+                        <div class="btn__fonction">
+                            <i>logo restaurant</i>
+                            <p>Dégustez au restaurant</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="restaurant">
+                    <h1>Restaurants</h1>
+                 <article class="restaurant__all">
+                    <a href="alafrançaise.html" class="restaurant__child">
+                    <div class="btn__nouveau">Nouveau</div>
+                    <caption>
+                        <img src="" alt="Restaurant de qualité !"/>
+                    </caption>
+                    <figcaption>
+                    <div>
+                        <h1>La palette du goût</h1>
+                        <h2>Ménilmontant</h2>
+                    </div>
+                    <i>Logo coeur</i>
+                    </figcaption>
+                    </a>
+                </article>
+                </section>
+            </article>
         </main>
 
 
         <footer>
+            <nav>
+                <ul>
+                  <li>Proposer un Restaurant</li>
+                  <li>Devenir partenaire</li>
+                  <li>Mentions légales</li>
+                  <li>Contact</li>
+                </ul>
+              </nav>
         </footer>
     </body>
 </html>
