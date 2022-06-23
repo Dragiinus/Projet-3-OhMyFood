@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Shrikhand?query=Shrikhand#standard-styles">
         <script src="https://kit.fontawesome.com/52fa043bb6.js" crossorigin="anonymous"></script>
 
@@ -13,16 +13,18 @@
     <body>
         <header class="homepage">
             <i class="fa-solid fa-arrow-left"></i>
-            <div class="logo">
+            <div class="homepage__logo">
                 <img src="/images/logo/ohmyfood@2x.svg" alt="logo OhMyFood"/>
             </div>
         </header>
 
         <nav>
-            <i class="fa-solid fa-location-dot"></i>
-            <div class="search">
-                <h2>Paris, Belleville</h2>
-            </div>    
+            <div class=search>
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="search__bar">
+                    <h2>Paris, Belleville</h2>
+                </div>   
+            </div> 
         </nav>
 
         <main>
@@ -30,27 +32,27 @@
                 <section class="reserved">
                     <h1>Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                    <div class="btn">
+                    <div class="reserved__btn">
                     <button>Explorer nos restaurants</button>
                     </div>
                 </section>
           
                 <section class="function">
                     <h1>Fonctionnement</h1>
-                    <div class="all-buttons">
-                        <div class="btn__fonction">
-                            <i>logo téléphone</i>
+                    <ol class="function__buttons">
+                        <li class="function__btn">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
                             <h2>Choisissez un restaurant</h2>
-                        </div>
-                        <div class="btn__fonction">
-                            <i>logo menu</i>
+                        </li>
+                        <li class="function__btn">
+                            <i class="fa-solid fa-list"></i>
                             <h2>Composez votre menu</h2>
-                        </div>
-                        <div class="btn__fonction">
-                            <i>logo restaurant</i>
+                        </li>
+                        <li class="function__btn">
+                            <i class="fa-solid fa-shop"></i>
                             <h2>Dégustez au restaurant</h2>
-                        </div>
-                    </div>
+                        </li>
+                    </ol>
                 </section>
 
                 <section class="restaurant">
@@ -64,7 +66,7 @@
                     <figcaption>
                     <div>
                         <h1>La palette du goût</h1>
-                        <h2>Ménilmontant</h2>
+                        <p>Ménilmontant</p>
                     </div>
                     <i>Logo coeur</i>
                     </figcaption>

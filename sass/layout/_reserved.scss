@@ -1,0 +1,14 @@
+/* Réservation */
+.reserved > h1 {
+    margin: 1rem 3rem;
+  }
+  
+  .reserved {
+    text-align: center;
+    &__btn button {
+      @include btn;
+      &:hover {
+        @extend %hover-btn;
+      }
+    }
+  } 

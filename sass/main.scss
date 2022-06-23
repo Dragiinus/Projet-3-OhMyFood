@@ -1,17 +1,17 @@
 @import "./utils/variables";
 @import "./utils/animations";
 @import "./utils/mixins";
-@import "./utils/breakpoints";
+@import "./utils/placeholder";
 
 @import "./components/buttons";
 
 @import "./base/base";
 
-@import "./pages/acceuil";
-@import "./pages/cards";
 @import "./pages/imagemenu";
 @import "./pages/sections";
 
 @import "./layout/header";
 @import "./layout/nav";
 @import "./layout/footer";
+@import "./layout/reserved";
+@import "./layout/fonctionnement";
