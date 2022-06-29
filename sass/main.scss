@@ -1,17 +1,14 @@
 @import "./utils/variables";
-@import "./utils/animations";
-@import "./utils/mixins";
 @import "./utils/placeholder";
+@import "./utils/mixins";
 
 @import "./components/buttons";
 
 @import "./base/base";
 
-@import "./pages/imagemenu";
-@import "./pages/sections";
-
 @import "./layout/header";
-@import "./layout/nav";
-@import "./layout/footer";
 @import "./layout/reserved";
 @import "./layout/fonctionnement";
+@import "./layout/restaurants";
+@import "./layout/footer";
+@import "./layout/nav";

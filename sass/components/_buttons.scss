@@ -1,0 +1,28 @@
+// Button type //
+
+@mixin btn {
+    font-family:'Roboto', 'sans-serif';
+    font-size: $base-size-type;
+    font-weight:300;
+    color: $color-white;
+    border-radius: 5rem;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    box-shadow: $btn-shadow $shadow-color;
+  }
+
+// btn-nouveau //
+
+@mixin btn-nouveau {
+    content: 'Nouveau';
+    position: absolute;
+    padding: 0.5rem;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 0.8rem;
+    color: darken($tertiary-color, $amount: 50);
+    background-color: $tertiary-color;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 0.25rem;
+  } 

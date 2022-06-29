@@ -3,7 +3,7 @@
 
 *
 {
-  font-family: 'Roboto';
+  font-family: 'Roboto','sans-serif';
   box-sizing: border-box;
   font-weight: 400;
 }
@@ -12,7 +12,7 @@ body  {
   background-color: $background-color;
 }
 
-body, p, h2 { 
+body, p, h2, figure { 
   margin:0;
 }
 
@@ -35,6 +35,11 @@ h2 {
   font-weight: 400;
 } 
 
-section {
+section,footer {
   padding:$paddingsection;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
 }
