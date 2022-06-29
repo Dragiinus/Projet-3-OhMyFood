@@ -1,18 +1,16 @@
 /* Header */
 
-.homepage {
+.header {
     background-color: $color-white;
     margin: 0;
     position: relative;
     &__logo {
       @extend %flex-center;
+      margin: 0;
       padding:$paddingsection;
       box-shadow: 0rem 0rem 0.5rem #919191;
       & img {
         width: 180px;
       }
     }
-  }
-  .fa-arrow-left {
-    display:none;
   }
