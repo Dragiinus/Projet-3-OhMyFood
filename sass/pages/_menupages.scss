@@ -6,6 +6,7 @@
   &__arrow {
     position: absolute;
     left: 2rem;
+    top:1.4rem;
     @extend %flex-center;
     color:black;
     font-size: 1.2rem;
@@ -27,6 +28,7 @@
 
   background-color: $background-color;
   border-radius: 2rem 2rem 0 0;
+
     &__header {
     padding: 1rem 2rem 2rem 1rem;
     display: flex;
@@ -37,4 +39,129 @@
     font-family: 'Shrikhand','sans-serif';
     font-size: 1.5rem;
   }
+}
+
+.sousmenus {
+  @media (min-width:992px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+}
+
+.sousmenu {
+  width: 100%;
+  @media (min-width:992px) {
+    width:33%;
+  }
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    padding-bottom:0.3rem;
+    margin: 1rem 0;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 4rem;
+      height:0.2rem;
+
+      background-color: $tertiary-color;
+    }
+  }
+}
+
+.menuitem {
+  display:flex;
+  width: 100%;
+
+  border-radius: 1rem;
+  background-color: #FFF;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  margin-bottom: 1rem;
+
+  box-shadow: $btn_shadow $shadow-color;
+
+  animation: itemappear .8s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+
+  &__header {
+    flex-basis: 0%;
+    min-width: 0;
+    flex-grow: 1;
+    padding: 1rem;
+    font-weight: bold;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+
+  &__done {
+    @extend %flex-center;
+    width: 4rem;
+    transition: .5s;
+    margin-right:-4rem;
+    background-color: $tertiary-color;
+  }
+
+  &:hover &__done {
+    margin-right: 0rem;
+  }
+
+  &__wrap {
+    @extend %flex-center;
+    width: 1.5rem;
+    height: 1.5rem;
+     
+    background-color: $color-white;
+    border-radius: 5rem;
+
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+  }
+
+  &:hover &__wrap {
+    transform: rotate(0);
+  }
+
+  &__icon {
+    color: $tertiary-color;
+  }
+}
+
+@for $i from 1 to 10 {
+  .delay-#{$i} {
+    animation-delay: #{$i * .1}s;
+  }
+}
+
+.menuitem__header > h2 {
+  font-size:$h1-card-size;
+  font-weight: 500;
+  margin: 0;
+}
+
+.truncated {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.commander {
+  @extend %flex-center;
 }
