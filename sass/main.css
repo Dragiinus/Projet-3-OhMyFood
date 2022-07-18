@@ -18,7 +18,10 @@
           transform: scale(1.05);
   -webkit-transition: all 80ms ease-in;
   transition: all 80ms ease-in;
-  opacity: 0.95;
+  -webkit-filter: brightness(1.05);
+          filter: brightness(1.05);
+  -webkit-box-shadow: #D5D5D5 0.5rem 0.5rem 0.5rem 0.1rem;
+          box-shadow: #D5D5D5 0.5rem 0.5rem 0.5rem 0.1rem;
 }
 
 .loader {
@@ -101,6 +104,13 @@ h1 {
 }
 
 h2 {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+h3 {
   font-family: 'Roboto', 'sans-serif';
   font-size: 1rem;
   font-weight: 400;
@@ -414,7 +424,7 @@ a, a:visited {
 }
 
 /* Réservation */
-.reserved > h1 {
+.reserved > h2 {
   margin: 1rem 3rem;
 }
 
@@ -525,14 +535,6 @@ a, a:visited {
   gap: 1rem;
 }
 
-@media (min-width: 992px) {
-  .restaurant__allcards {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 .restaurant__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -541,11 +543,6 @@ a, a:visited {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  position: relative;
-  background-color: #FFF;
-  display: flex;
-  flex-direction: column;
   position: relative;
   width: 100%;
   background-color: #FFF;
@@ -573,24 +570,7 @@ a, a:visited {
      object-fit: cover;
 }
 
-.new {
-  position: relative;
-}
-
-.new::before {
-  content: 'Nouveau';
-  position: absolute;
-  padding: 0.5rem;
-  font-family: 'Roboto', 'sans-serif';
-  font-size: 0.8rem;
-  color: #1b6150;
-  background-color: #99E2D0;
-  top: 1rem;
-  right: 1rem;
-  border-radius: 0.25rem;
-}
-
-figcaption {
+.restaurant__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,7 +583,7 @@ figcaption {
   padding: 1rem;
 }
 
-figcaption .restaurant__text {
+.restaurant__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,6 +591,12 @@ figcaption .restaurant__text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.restaurant__text > h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
 }
 
 .heart {
@@ -644,12 +630,6 @@ figcaption .restaurant__text {
   -webkit-transition: all 150ms ease-in;
   transition: all 150ms ease-in;
   opacity: 0;
-}
-
-.restaurant__text > h2 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 0;
 }
 
 footer {
