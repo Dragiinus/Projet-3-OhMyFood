@@ -33,14 +33,21 @@ h2 {
   font-family: 'Roboto', 'sans-serif';
   font-size: $h1-size;
   font-weight: 700;
-  margin: 1rem 0;
+  margin: 1rem 26px;
 } 
 
 h3 {
   font-family: 'Roboto', 'sans-serif';
   font-size: $base-size-type;
   font-weight: 400;
+  @media (min-width:1024px) {
+    font-size: 1.2rem;
+  }
 } 
+
+ol {
+  padding: 0 24px 0 24px;
+}
 
 section,footer {
   padding:$paddingsection;

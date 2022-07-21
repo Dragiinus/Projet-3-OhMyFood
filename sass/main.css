@@ -107,13 +107,23 @@ h2 {
   font-family: 'Roboto', 'sans-serif';
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 1rem 0;
+  margin: 1rem 26px;
 }
 
 h3 {
   font-family: 'Roboto', 'sans-serif';
   font-size: 1rem;
   font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+ol {
+  padding: 0 24px 0 24px;
 }
 
 section, footer {
@@ -459,7 +469,7 @@ a, a:visited {
   gap: 2rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 766px) {
   .function__buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -487,6 +497,12 @@ a, a:visited {
           box-shadow: 0rem 0.2rem 0.5rem 0.1rem #D5D5D5;
 }
 
+@media (min-width: 768px) and (max-width: 1022px) {
+  .function__btn {
+    padding: 1.5rem 0 1.5rem 0;
+  }
+}
+
 .function__btn:hover {
   -webkit-transition: all 80ms ease-in;
   transition: all 80ms ease-in;
@@ -509,6 +525,13 @@ a, a:visited {
   height: 1.5rem;
   background-color: #9356DC;
   border-radius: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 1022px) {
+  .function__btn::before {
+    margin-right: -0.4rem;
+    width: 1.8rem;
+  }
 }
 
 .function__btn i {
