@@ -1,6 +1,6 @@
 // Search-bar //
 .search {
-    @extend %flex-center;
+    @include flex-center;
     background-color: #DDD;
     padding: $paddingsection;
     & i {

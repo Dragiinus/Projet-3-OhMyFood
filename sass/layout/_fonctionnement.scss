@@ -53,7 +53,7 @@
         width: 1.8rem;
       }
   
-      @extend %flex-center;
+      @include flex-center;
     }
       & i {
         color: grey;

@@ -50,6 +50,14 @@
     }
   }  
 }  
+
+.new {
+  position: relative;
+  &::before {
+  @include btn-nouveau;
+  } 
+}
+
   .heart {
     position: relative;
 

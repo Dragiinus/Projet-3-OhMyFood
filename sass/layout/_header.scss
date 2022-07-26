@@ -5,7 +5,7 @@
     margin: 0;
     position: relative;
     &__logo {
-      @extend %flex-center;
+      @include flex-center;
       margin: 0;
       padding:$paddingsection;
       box-shadow: 0rem 0rem 0.5rem #919191;

@@ -7,7 +7,7 @@
     position: absolute;
     left: 2rem;
     top:1.4rem;
-    @extend %flex-center;
+    @include flex-center;
     color:black;
     font-size: 1.2rem;
   }
@@ -112,7 +112,7 @@
   }
 
   &__done {
-    @extend %flex-center;
+    @include flex-center;
     width: 4rem;
     transition: .5s;
     margin-right:-4rem;
@@ -124,7 +124,7 @@
   }
 
   &__wrap {
-    @extend %flex-center;
+    @include flex-center;
     width: 1.5rem;
     height: 1.5rem;
      
@@ -163,5 +163,5 @@
 }
 
 .commander {
-  @extend %flex-center;
+  @include flex-center;
 }

@@ -9,7 +9,7 @@
       @include btn;
       @include gradient(-10deg);
       &:hover {
-        @extend %hover-btn;
+        @include hover-btn;
       }
     }
   } 
