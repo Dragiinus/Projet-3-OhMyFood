@@ -25,10 +25,10 @@
     }
     @include base-shadow;
       &:hover {
-        transition: all 80ms ease-in;
+        transition: all 300ms ease-in;
         @include btn-lighten;
           & > i {
-              transition: all 80ms ease-in;
+              transition: all 300ms ease-in;
               color:darken($color: $primary-color, $amount: 15);
           }
       }

@@ -549,14 +549,14 @@ a, a:visited {
 }
 
 .function__btn:hover {
-  -webkit-transition: all 80ms ease-in;
-  transition: all 80ms ease-in;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
   background-color: #d7c0f2;
 }
 
 .function__btn:hover > i {
-  -webkit-transition: all 80ms ease-in;
-  transition: all 80ms ease-in;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
   color: #6c27be;
 }
 
